@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TalkFlow</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <h1>TalkFlow</h1>
+      <p>Create a room or join one with a code.</p>
+    </header>
+
+    <section class="card">
+      <h2>Create Room</h2>
+      <form id="createRoomForm" class="stack">
+        <input id="createDisplayName" name="displayName" type="text" placeholder="Your display name" required />
+        <input id="roomName" name="roomName" type="text" placeholder="Room name" required />
+        <button type="submit">Create</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Join Room</h2>
+      <form id="joinRoomForm" class="stack">
+        <input id="joinDisplayName" name="displayName" type="text" placeholder="Your display name" required />
+        <input id="roomCode" name="roomCode" type="text" placeholder="Room code" maxlength="6" required />
+        <button type="submit">Join</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Your Rooms</h2>
+      <p>Already joined rooms are listed here.</p>
+      <button id="viewRoomsBtn" class="secondary">View My Rooms</button>
+    </section>
+
+    <p id="status" class="status"></p>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
