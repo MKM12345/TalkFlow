@@ -1,0 +1,14 @@
+{
+  "name": "talkflow",
+  "version": "0.1.0",
+  "description": "Lightweight room-based messaging app",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.8.1"
+  }
+}

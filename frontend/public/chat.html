@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TalkFlow Chat</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="shell chat-shell">
+    <header>
+      <a href="/">← Home</a>
+      <h1 id="roomHeader">TalkFlow Room</h1>
+      <p id="roomMeta"></p>
+    </header>
+
+    <section id="messages" class="messages"></section>
+
+    <form id="messageForm" class="composer">
+      <input id="messageInput" type="text" placeholder="Say something..." maxlength="280" required />
+      <button type="submit">Send</button>
+    </form>
+
+    <p id="chatStatus" class="status"></p>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/rooms.js"></script>
+</body>
+</html>
